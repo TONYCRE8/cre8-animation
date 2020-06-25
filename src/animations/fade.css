@@ -1,0 +1,56 @@
+.fade-up {
+    animation-name: fade-up;
+    animation-fill-mode: both;
+}
+.fade-down {
+    animation-name: fade-down;
+    animation-fill-mode: both;
+}
+.fade-left {
+    animation-name: fade-left;
+    animation-fill-mode: both;
+}
+.fade-right {
+    animation-name: fade-right;
+    animation-fill-mode: both;
+}
+@keyframes fade-up {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-down {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-left {
+    0% {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-right {
+    0% {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

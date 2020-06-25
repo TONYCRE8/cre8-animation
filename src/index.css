@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+
+    font-family: sans-serif;
+    margin-top: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    font-style: italic;
+}
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.title {
+    margin: 0;
+    color: #2d2d2d;
+}
+
+.section {
+    height: 310px;
+    width: 260px;
+    border: 1px #c4c4c4 solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-flow: column wrap;
+}
+
+.section .title {
+    color: #4f4f4f;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+}
+
+.slide .highlight {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #82f0bc 50%);
+}
+.fade > .highlight {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #faac9e 50%);
+}
+.bounce > .highlight {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #faec9e 50%);
+}
+.animation {
+    display: block;
+    border-radius: 5px;
+    color: #4f4f4f;
+    height: 30px;
+    width: 185px;
+    margin: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    border: 1px solid;
+    border-left: 10px solid;
+}
+.slide {
+    border-color: #82f0bc;
+}
+.fade {
+    border-color: #faac9e;
+}
+.bounce {
+    border-color: #faec9e;
 }
