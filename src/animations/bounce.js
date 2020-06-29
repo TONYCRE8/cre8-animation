@@ -1,27 +1,9 @@
 import React from 'react'
 import './bounce.css'
+import Animation from './animation'
 
 export default function Bounce({children, direction, duration, delay}) {
-    const dir = direction;
-    //come back to this
-    var transition =`bounce-${dir}`
-    var dur = duration + "ms";
-    var del = delay + "ms";
-    if (duration == null) {
-        dur = "1000ms"
-    }
-    if (delay == null) {
-        del = 0
-    }
-
-    var style = {
-        animationDuration: dur,
-        animationDelay: del
-    }
-    
     return (
-        <div className={transition} style={style}>
-            {children}
-        </div>
+        <Animation type="bounce" children={children} direction={direction} duration={duration} delay={delay} easing="cubic-bezier(.55,.25,.55,1.25)"></Animation>
     )
 }

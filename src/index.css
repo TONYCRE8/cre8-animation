@@ -1,21 +1,19 @@
+body {
+    background: #2d2d2d;
+}
+h1, h2, h3, h4, h5, h6, p, span, div {
+    color: #fff;
+}
 .page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 50px;
     margin-top: 20px;
+    cursor: none;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 20px;
-    right: 100px;
     font-style: italic;
+    text-align: right;
 }
 .logo img {
     height: 50px;
@@ -25,39 +23,63 @@
 
 .title {
     margin: 0;
-    color: #2d2d2d;
+    height: 70px;
+    font-size: 50px;
+}
+
+code {
+    background: #3d3d3d;
+    font-family: monospace;
+}
+
+.subhead {
+    margin: 0;
+    margin-top: 70px;
+    font-size: 24px;
+
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 50px;
+    transform: rotate(90deg);
 }
 
 .section {
     height: 310px;
     width: 260px;
-    border: 1px #c4c4c4 solid;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(12,12,12,0.2);
     display: flex;
     justify-content: center;
     align-items: center;    
     flex-flow: column wrap;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .section .title {
-    color: #4f4f4f;
+    color: #fff;
     font-weight: 500;
+    height: auto;
     letter-spacing: 0.05rem;
+    font-size: 20px;
 }
 
 .slide .highlight {
-    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #82f0bc 50%);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #477761 50%);
 }
 .fade > .highlight {
-    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #faac9e 50%);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #6272cf 50%);
 }
 .bounce > .highlight {
-    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #faec9e 50%);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #c05d37 50%);
 }
 .animation {
     display: block;
     border-radius: 5px;
-    color: #4f4f4f;
     height: 30px;
     width: 185px;
     margin: 10px;
@@ -67,11 +89,11 @@
     border-left: 10px solid;
 }
 .slide {
-    border-color: #82f0bc;
+    border-color: #477761;
 }
 .fade {
-    border-color: #faac9e;
+    border-color: #6272cf;
 }
 .bounce {
-    border-color: #faec9e;
+    border-color: #c05d37;
 }
